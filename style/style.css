@@ -15,8 +15,25 @@
   width: 100%;
 }
 .carrossel {
-    height: 93VH;
-  background: url("../img/background1.jpg");
+    height: 92VH;
+  background: url("../img/background2.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  animation: background 10s infinite alternate;
 }
+
+@keyframes background {
+    0% {
+      background-image: url("../img/background1.jpg");
+    }
+    25% {
+      background-image: url("../img/background2.jpg");
+    }
+    50% {
+      background-image: url("../img/background3.jpg");
+    }
+    100% {
+      background-image: url("../img/background4.jpg");
+    }
+  }
