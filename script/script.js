@@ -1,6 +1,4 @@
 background = document.querySelectorAll('#bg')
-console.log(background)
-
 bg = 0
 tempoSlide = 3000
 function slide() {
@@ -14,8 +12,6 @@ function slide() {
             for (i = 0; i < background.length; i++) {
                 background[i].classList.remove('fade-out')
             }
-
-
         }
     }, tempoSlide)
 }

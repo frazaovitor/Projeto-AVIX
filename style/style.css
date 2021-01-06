@@ -3,12 +3,18 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+h1{
+font-size: 2.5rem;
+padding: 0 1rem;
 }
 
 .logo {
   display: flex;
   background-color: #000;
-  color: #fff;
+  color: #A6D5F7;
   font-size: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -21,6 +27,7 @@
 
 .carrossel > img {
   width: 100%;
+height: 370px;
   position: absolute;
   transition: 2s;
 }
@@ -31,5 +38,29 @@
 }
 .fade-out {
   opacity: 0;
-  z-index: 99;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 370px;
+  width: 100%;
+  height: 34vh;
+  background: #F7BFBE;
+}
+
+.banner > div> hr, h2, h3{
+  width: 10rem;
+  color: #AB7372;
+  border-color: #AB7372;
+}
+.banner> div>h2{
+  padding-top: 1rem;
+  font-size: 50px;
+}
+.banner> div>h3{
+  padding-bottom: 2rem;
+  margin-top: -1rem;
 }
