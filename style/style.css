@@ -3,20 +3,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
 }
 
-h1{
-font-size: 2.5rem;
-padding: 0 1rem;
+h1 {
+  font-size: 1.1rem;
+  padding: 0 1rem;
 }
 
 .logo {
   display: flex;
   background-color: #000;
-  color: #A6D5F7;
+  color: #a6d5f7;
   font-size: 0.5rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -27,7 +26,7 @@ padding: 0 1rem;
 
 .carrossel > img {
   width: 100%;
-height: 370px;
+  height: 370px;
   position: absolute;
   transition: 2s;
 }
@@ -40,7 +39,7 @@ height: 370px;
   opacity: 0;
 }
 
-.banner{
+.banner1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,19 +47,74 @@ height: 370px;
   margin-top: 370px;
   width: 100%;
   height: 34vh;
-  background: #F7BFBE;
+  background: #f7bfbe;
 }
 
-.banner > div> hr, h2, h3{
+.banner1 > div > hr,
+h2,
+h3 {
   width: 10rem;
-  color: #AB7372;
-  border-color: #AB7372;
+  color: #ab7372;
+  border-color: #ab7372;
 }
-.banner> div>h2{
+.banner1 > div > h2 {
   padding-top: 1rem;
   font-size: 50px;
 }
-.banner> div>h3{
+.banner1 > div > h3 {
   padding-bottom: 2rem;
   margin-top: -1rem;
+}
+
+.banner2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+}
+
+.banner2 > h3 {
+  color: #a6d5f7;
+  width: 5rem;
+  padding: 0.2rem 0;
+  border-width: 0.2rem 0 0.2rem 0;
+  border-color: #a6d5f7;
+  border-style: solid;
+}
+
+.banner2 > h4 {
+  color: #a6d5f7;
+}
+
+.banner2> ul>li{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color:#F7BFBE;
+  padding: 1rem;
+}
+
+.banner2> ul>li>img{
+  width: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 20%;
+}
+
+.logoPequeno {
+  width: 10rem;
+}
+.quemSomos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+.quemSomos > h2 {
+  text-align: center;
+  padding: 1rem 0;
 }
