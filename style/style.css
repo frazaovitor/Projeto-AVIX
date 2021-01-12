@@ -57,13 +57,19 @@ h3 {
   color: #ab7372;
   border-color: #ab7372;
 }
+
 .banner1 > div > h2 {
   padding-top: 1rem;
   font-size: 50px;
 }
+
 .banner1 > div > h3 {
   padding-bottom: 2rem;
   margin-top: -1rem;
+}
+
+.banner1>img{
+  width: 100%;
 }
 
 .banner2 {
@@ -89,18 +95,22 @@ h3 {
   color: #a6d5f7;
 }
 
-.banner2> ul>li{
+.banner2 > ul > li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color:#F7BFBE;
+  color: #f7bfbe;
   padding: 1rem;
 }
 
-.banner2> ul>li>img{
+.banner2 > ul > li > img {
   width: 5rem;
   margin-bottom: 1rem;
   border-radius: 20%;
+}
+
+.produtos > img {
+  width: 100%;
 }
 
 .logoPequeno {
