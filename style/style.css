@@ -68,7 +68,7 @@ h3 {
   margin-top: -1rem;
 }
 
-.banner1>img{
+.banner1 > img {
   width: 100%;
 }
 
@@ -113,9 +113,6 @@ h3 {
   width: 100%;
 }
 
-.logoPequeno {
-  width: 10rem;
-}
 .quemSomos {
   display: flex;
   justify-content: center;
@@ -123,8 +120,28 @@ h3 {
   text-align: left;
   flex-direction: column;
   padding: 0.8rem;
+  background-color: #ab7372;
 }
+
+.quemSomos > img {
+  width: 5rem;
+  margin-top: 1rem;
+}
+
 .quemSomos > h2 {
   text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  color: #f7bfbe;
+  border-width: 0.2rem 0 0.2rem 0;
+  border-color:  #f7bfbe;
+  border-style: solid;
+}
+
+.quemSomos > p {
+  color: #a6d5f7;
   padding: 1rem 0;
+}
+.quemSomos>p:last-child{
+  padding-top: 0rem;
 }
