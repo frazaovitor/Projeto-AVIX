@@ -42,7 +42,6 @@ h1 {
 .banner1 {
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
   margin-top: 370px;
   width: 100%;
@@ -65,7 +64,6 @@ h3 {
 
 .banner1 > div > h3 {
   padding-bottom: 2rem;
-  margin-top: -1rem;
 }
 
 .banner1 > img {
@@ -82,7 +80,7 @@ h3 {
   background-color: #000;
 }
 
-.banner2 > h3 {
+h3 {
   color: #a6d5f7;
   width: 5rem;
   padding: 0.2rem 0;
@@ -134,14 +132,43 @@ h3 {
   padding: 0.5rem 0;
   color: #f7bfbe;
   border-width: 0.2rem 0 0.2rem 0;
-  border-color:  #f7bfbe;
+  border-color: #f7bfbe;
   border-style: solid;
 }
 
 .quemSomos > p {
-  color: #a6d5f7;
+  color: #f7bfbe;
   padding: 1rem 0;
 }
-.quemSomos>p:last-child{
+.quemSomos > p:last-child {
   padding-top: 0rem;
+}
+
+.vendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #000;
+  margin-top: -1rem;
+  padding: 3rem 0;
+  color: #f7bfbe;
+}
+
+.vendas > p {
+  padding: 1rem 1rem;
+}
+
+.vendas>a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #a6d5f7;
+}
+
+.vendas>a>img{
+width: 3rem;
 }
