@@ -26,7 +26,8 @@ h1 {
 }
 
 h1,
-header > p {
+header > p,
+h2 {
   background-image: radial-gradient(
     circle at top left,
     #000199 1%,
@@ -91,22 +92,11 @@ header > p {
 .banner1 > div > img {
   width: 6rem;
   padding: 2rem 0;
-  animation-name: punho;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 
-@keyframes punho {
-  0% {
-    src: url(../img/punho-aberto.png);
-  }
-  100% {
-    src: url(../img/punho.png);
-  }
-}
 
 .banner1 > h2 {
-  color: #cf3dd0;
+  color: #ca4dd6;
 }
 
 .banner2 {
