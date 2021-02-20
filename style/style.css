@@ -6,17 +6,15 @@
 }
 
 h1 {
-  font-family: 'Mitr', sans-serif;
+  font-family: "Mitr", sans-serif;
   font-size: 80px;
-
   background-image: radial-gradient(
     circle at top left,
     #000199 1%,
-    #CA4DD6 25%,
-    #476CE4 50%,
-    #560E6A 75%,
-    #CF3DD0 100%
-
+    #ca4dd6 25%,
+    #476ce4 50%,
+    #560e6a 75%,
+    #cf3dd0 100%
   );
 
   background-size: 300%;
@@ -29,17 +27,23 @@ h1 {
 }
 
 @keyframes background {
-  0% {background-position: right;}
-  25% {background-position: left;}
-  50% {background-position: left;}
-  100% {background-position: right;}
+  0% {
+    background-position: right;
+  }
+  25% {
+    background-position: left;
+  }
+  50% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
-
-
-.logo {
+header {
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -63,33 +67,32 @@ h1 {
 
 .banner1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: auto;
   margin-top: 370px;
   width: 100%;
-  height: 34vh;
-  background: #f7bfbe;
+  height: 50vh;
+  background: #000000;
 }
 
-.banner1 > div > hr,
-h2,
-h3 {
-  width: 10rem;
-  color: #ab7372;
-  border-color: #ab7372;
+.banner1 >div> img {
+  width: 6rem;
+  padding: 2rem 0;
+  animation-name: punho;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-.banner1 > div > h2 {
-  padding-top: 1rem;
-  font-size: 50px;
+@keyframes punho{
+0% {src: url(../img/punho-aberto.png);}
+100% {src: url(../img/punho.png);}
 }
 
-.banner1 > div > h3 {
-  padding-bottom: 2rem;
-}
 
-.banner1 > img {
-  width: 100%;
+.banner1 > h2 {
+  color: #cf3dd0;
 }
 
 .banner2 {
@@ -141,11 +144,6 @@ h3 {
   flex-direction: column;
   padding: 0.8rem;
   background-color: #ab7372;
-}
-
-.quemSomos > img {
-  width: 5rem;
-  margin-top: 1rem;
 }
 
 .quemSomos > h2 {
