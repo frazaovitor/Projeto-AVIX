@@ -5,9 +5,28 @@
   font-family: "Open Sans", sans-serif;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header > p {
+  margin: -20px 0 10px 0;
+  color: #ca4dd6;
+  font-size: 20px;
+}
+
 h1 {
   font-family: "Mitr", sans-serif;
   font-size: 80px;
+}
+
+h1,
+header > p {
   background-image: radial-gradient(
     circle at top left,
     #000199 1%,
@@ -41,14 +60,6 @@ h1 {
   }
 }
 
-header {
-  display: flex;
-  background-color: rgb(0, 0, 0);
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .carrossel {
   display: flex;
 }
@@ -77,7 +88,7 @@ header {
   background: #000000;
 }
 
-.banner1 >div> img {
+.banner1 > div > img {
   width: 6rem;
   padding: 2rem 0;
   animation-name: punho;
@@ -85,11 +96,14 @@ header {
   animation-iteration-count: infinite;
 }
 
-@keyframes punho{
-0% {src: url(../img/punho-aberto.png);}
-100% {src: url(../img/punho.png);}
+@keyframes punho {
+  0% {
+    src: url(../img/punho-aberto.png);
+  }
+  100% {
+    src: url(../img/punho.png);
+  }
 }
-
 
 .banner1 > h2 {
   color: #cf3dd0;
