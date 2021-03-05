@@ -4,7 +4,6 @@ tempoSlide = 3000
 function slide() {
 
     setInterval(() => {
-        console.log(bg + 'atual')
         background[bg].classList.add('fade-out')
         bg++
         if (bg == 4) {

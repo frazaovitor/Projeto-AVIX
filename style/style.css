@@ -26,8 +26,7 @@ h1 {
 }
 
 h1,
-header > p,
-h2 {
+header > p {
   background-image: radial-gradient(
     circle at top left,
     #000199 1%,
@@ -94,9 +93,36 @@ h2 {
   padding: 2rem 0;
 }
 
-
 .banner1 > h2 {
   color: #ca4dd6;
+  text-shadow: 0px 0px 20px #ca4dd6;
+}
+
+.quemSomos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 1.5rem;
+  flex-direction: column;
+  padding: 0.8rem 2rem;
+  background-color: #560e6a;
+}
+
+.quemSomos > h2,
+.banner2 > h2 {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  color: #cf3dd0;
+}
+
+.quemSomos > p {
+  color: #f7bfbe;
+  padding: 1rem 0;
+}
+.quemSomos > p:last-child {
+  padding-top: 0rem;
 }
 
 .banner2 {
@@ -107,15 +133,6 @@ h2 {
   align-items: center;
   width: 100%;
   background-color: #000;
-}
-
-h3 {
-  color: #a6d5f7;
-  width: 5rem;
-  padding: 0.2rem 0;
-  border-width: 0.2rem 0 0.2rem 0;
-  border-color: #a6d5f7;
-  border-style: solid;
 }
 
 .banner2 > h4 {
@@ -139,35 +156,6 @@ h3 {
 .produtos > img {
   width: 100%;
 }
-
-.quemSomos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  flex-direction: column;
-  padding: 0.8rem;
-  background-color: #ab7372;
-}
-
-.quemSomos > h2 {
-  text-align: center;
-  margin: 1rem 0;
-  padding: 0.5rem 0;
-  color: #f7bfbe;
-  border-width: 0.2rem 0 0.2rem 0;
-  border-color: #f7bfbe;
-  border-style: solid;
-}
-
-.quemSomos > p {
-  color: #f7bfbe;
-  padding: 1rem 0;
-}
-.quemSomos > p:last-child {
-  padding-top: 0rem;
-}
-
 .vendas {
   display: flex;
   flex-direction: column;
