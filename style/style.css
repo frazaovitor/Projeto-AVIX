@@ -100,22 +100,21 @@ header > p {
 }
 
 .tituloQuemSomos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 5rem;
   background: #f7bfbe;
   color: #560e6a;
-  padding: 4rem 0;
 }
 
-.tituloQuemSomos > h2 {
-  /* background: #cf3dd0; */
-  background-image: linear-gradient(45deg, #ca4dd6 70%, #f7bfbe 30%);
+.tituloQuemSomos > h2,
+.tituloViscose > h2 {
+  /* background-image: linear-gradient(45deg, #ca4dd6 70%, #f7bfbe 30%); */
+  display: flex;
+  justify-content: center;
+  background: url("../img/coração.png") no-repeat;
+  background-position: center;
+  background-size: 100%;
   width: 100%;
-  text-align: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .quemSomos {
@@ -123,9 +122,7 @@ header > p {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  line-height: 1.5rem;
   flex-direction: column;
-  padding: 0 2rem;
   background-color: #f7bfbe;
 }
 
@@ -187,14 +184,13 @@ header > p {
   padding: 4rem 0;
 }
 
-.tituloViscose > h2 {
-  /* background: #cf3dd0; */
+/*  {
   background-image: linear-gradient(45deg, #ca4dd6 70%, #000 30%);
 
   width: 100%;
   text-align: center;
   padding: 1rem 0;
-}
+} */
 
 .viscose {
   display: flex;
