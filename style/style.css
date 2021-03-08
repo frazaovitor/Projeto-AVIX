@@ -166,7 +166,7 @@ header > p {
 
 .quemSomos > p {
   color: #560e6a;
-  padding-bottom: 1rem;
+  padding: 0 2rem 1rem 2rem;
   font-weight: 600;
 }
 .quemSomos > p:last-child {
