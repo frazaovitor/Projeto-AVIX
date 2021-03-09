@@ -5,6 +5,23 @@
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #ca4dd6;
+}
+
+hr {
+  width: 10rem;
+  border: solid 0.5px #ca4dd6;
+  margin: 0.7rem;
+}
+
+h1 {
+  font-family: "Mitr", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -18,12 +35,6 @@ header > p {
   margin: -20px 0 10px 0;
   color: #ca4dd6;
   font-size: 20px;
-}
-
-h1 {
-  font-family: "Mitr", sans-serif;
-  font-weight: 500;
-  font-size: 80px;
 }
 
 h1,
@@ -106,8 +117,8 @@ header > p {
 }
 
 .tituloQuemSomos > h2,
-.tituloViscose > h2 {
-  /* background-image: linear-gradient(45deg, #ca4dd6 70%, #f7bfbe 30%); */
+.tituloViscose > h2,
+.tituloVendas > h2 {
   display: flex;
   justify-content: center;
   background: url("../img/coração.png") no-repeat;
@@ -131,20 +142,31 @@ header > p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 20rem;
   color: #560e6a;
 }
 
 .donos {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0.8rem;
-  border: 3px solid #560e6a;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.backgroundDonos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
 }
 
 .donos img {
@@ -152,8 +174,8 @@ header > p {
   height: 100%;
 }
 
-.containerDonos > p {
-  margin-bottom: 3rem;
+.backgroundDonos > p {
+  color: #560e6a;
 }
 
 .quemSomos > h2,
@@ -168,9 +190,6 @@ header > p {
   color: #560e6a;
   padding: 0 2rem 1rem 2rem;
   font-weight: 600;
-}
-.quemSomos > p:last-child {
-  padding-top: 0rem;
 }
 
 .tituloViscose {
@@ -229,20 +248,18 @@ header > p {
   width: 100%;
 }
 
-.vendas {
+.containerVendas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: justify;
   background-color: #000;
-  margin-top: -1rem;
-  padding: 3rem 0;
   color: #f7bfbe;
 }
 
-.vendas > p {
-  padding: 1rem 1rem;
+.vendas {
+  width: 20rem;
 }
 
 .vendas > a {
@@ -250,10 +267,17 @@ header > p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #a6d5f7;
+  margin: 2rem 0;
 }
 
 .vendas > a > img {
-  width: 3rem;
+  width: 2.5rem;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#ca4dd6 ;
+  height: 2rem;
 }
