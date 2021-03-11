@@ -1,3 +1,13 @@
+:root {
+  --rosaClaro: #ca4dd6;
+  --rosaEscuro: #cf3dd0;
+  --azulClaro: #476ce4;
+  --azulEscuro: #000199;
+  --roxo: #560e6a;
+  --bg-fonte: #f7bfbe;
+  --bg: #111;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,12 +17,12 @@
 
 a {
   text-decoration: none;
-  color: #ca4dd6;
+  color: var(--rosaClaro);
 }
 
 hr {
   width: 10rem;
-  border: solid 0.5px #ca4dd6;
+  border: solid 0.5px var(--rosaClaro);
   margin: 0.7rem;
 }
 
@@ -25,7 +35,7 @@ h1 {
 header {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bg);
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -33,7 +43,7 @@ header {
 
 header > p {
   margin: -20px 0 10px 0;
-  color: #ca4dd6;
+  color: var(--rosaClaro);
   font-size: 20px;
 }
 
@@ -41,11 +51,11 @@ h1,
 header > p {
   background-image: radial-gradient(
     circle at top left,
-    #000199 1%,
-    #ca4dd6 25%,
-    #476ce4 50%,
-    #560e6a 75%,
-    #cf3dd0 100%
+    var(--azulEscuro) 1%,
+    var(--rosaClaro) 25%,
+    var(--azulClaro) 50%,
+    var(--roxo) 75%,
+    var(--rosaEscuro) 100%
   );
 
   background-size: 300%;
@@ -97,7 +107,7 @@ header > p {
   margin-top: 370px;
   width: 100%;
   height: 50vh;
-  background: #000000;
+  background: var(--bg);
 }
 
 .banner1 > div > img {
@@ -106,14 +116,14 @@ header > p {
 }
 
 .banner1 > h2 {
-  color: #ca4dd6;
-  text-shadow: 0px 0px 20px #ca4dd6;
+  color: var(--rosaClaro);
+  text-shadow: 0px 0px 20px var(--rosaClaro);
 }
 
 .tituloQuemSomos {
   width: 100%;
-  background: #f7bfbe;
-  color: #560e6a;
+  background: var(--bg-fonte);
+  color: var(--roxo);
 }
 
 .tituloQuemSomos > h2,
@@ -134,7 +144,7 @@ header > p {
   align-items: center;
   text-align: justify;
   flex-direction: column;
-  background-color: #f7bfbe;
+  background-color: var(--bg-fonte);
 }
 
 .containerDonos {
@@ -143,7 +153,7 @@ header > p {
   justify-content: space-between;
   align-items: center;
   width: 20rem;
-  color: #560e6a;
+  color: var(--roxo);
 }
 
 .donos {
@@ -175,7 +185,14 @@ header > p {
 }
 
 .backgroundDonos > p {
-  color: #560e6a;
+  color: var(--roxo);
+}
+
+.redeSocial{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 1rem;
 }
 
 .quemSomos > h2,
@@ -183,11 +200,11 @@ header > p {
   text-align: center;
   margin: 1rem 0;
   padding: 0.5rem;
-  color: #cf3dd0;
+  color: var(--rosaClaro);
 }
 
 .quemSomos > p {
-  color: #560e6a;
+  color: var(--roxo);
   padding: 0 2rem 1rem 2rem;
   font-weight: 600;
 }
@@ -198,18 +215,10 @@ header > p {
   align-items: center;
   width: 100%;
   height: 5rem;
-  background: #000000;
-  color: #f7bfbe;
+  background: var(--bg);
+  color: var(--bg-fonte);
   padding: 4rem 0;
 }
-
-/*  {
-  background-image: linear-gradient(45deg, #ca4dd6 70%, #000 30%);
-
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-} */
 
 .viscose {
   display: flex;
@@ -218,7 +227,7 @@ header > p {
   padding-bottom: 2rem;
   align-items: center;
   width: 100%;
-  background-color: #000;
+  background-color: var(--bg);
 }
 
 .viscose > h4 {
@@ -229,7 +238,7 @@ header > p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #f7bfbe;
+  color: var(--bg-fonte);
   padding: 3rem;
 }
 
@@ -241,7 +250,7 @@ header > p {
 }
 
 .produtos {
-  background: rgb(0, 0, 0);
+  background: var(--bg);
 }
 
 .produtos > img {
@@ -254,8 +263,8 @@ header > p {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  background-color: #000;
-  color: #f7bfbe;
+  background-color: var(--bg);
+  color: var(--bg-fonte);
 }
 
 .vendas {
@@ -274,10 +283,10 @@ header > p {
   width: 2.5rem;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:#ca4dd6 ;
+  background: var(--rosaClaro);
   height: 2rem;
 }
