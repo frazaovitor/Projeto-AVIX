@@ -133,17 +133,17 @@ header > p {
   justify-content: center;
   background: url("../img/coração.png") no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 20rem;
   width: 100%;
   padding: 3rem 0;
 }
 
 .quemSomos {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  flex-direction: column;
   background-color: var(--bg-fonte);
 }
 
@@ -188,7 +188,7 @@ header > p {
   color: var(--roxo);
 }
 
-.redeSocial{
+.redeSocial {
   display: flex;
   justify-content: space-around;
   width: 60%;
@@ -281,6 +281,7 @@ header > p {
 
 .vendas > a > img {
   width: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 footer {
@@ -289,4 +290,14 @@ footer {
   align-items: center;
   background: var(--rosaClaro);
   height: 2rem;
+}
+
+/* Width 1000px pra cima */
+
+@media (min-width: 62.5rem) {
+  .carrossel > img {
+    width: 100%;
+    height: 100%;
+  }
+  
 }
