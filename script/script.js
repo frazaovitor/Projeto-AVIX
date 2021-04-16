@@ -5,7 +5,7 @@ function carregado() {
         document.querySelector('.carregando').style.display = 'none'
         slide()
         mudarImagem()
-    }, 2000)
+    }, 3000)
 }
 
 if (document.readyState != "complete") {
