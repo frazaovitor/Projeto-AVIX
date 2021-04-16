@@ -29,6 +29,12 @@
 .carregando > p:first-child {
   font-size: 6rem;
 }
+.carregando > p:last-child {
+  font-size: 1rem;
+}
+.carregando > i{
+  color: rgb(49, 49, 49);
+}
 
 body {
   /* display: none; */
