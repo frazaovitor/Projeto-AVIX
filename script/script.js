@@ -1,11 +1,10 @@
 tamanhoTela = window.innerWidth
 
-background = document.querySelectorAll('#bg')
+background = document.querySelectorAll('.bg')
 bg = 0
 tempoSlide = 3000
 
 function slide() {
-
     setInterval(() => {
         background[bg].classList.add('fade-out')
         bg++
@@ -17,16 +16,23 @@ function slide() {
         }
     }, tempoSlide)
 }
-slide()
 
-async function mudarImagem() {
+document.addEventListener('DOMContentLoaded', function(){
+    slide()
+})
+
+function mudarImagem() {
     if (tamanhoTela >= 700) {
-        document.querySelector('.bg1').setAttribute('src', 'img/carousel01-G.jpg');
-        document.querySelector('.bg2').setAttribute('src', 'img/carousel02-G.jpg');
-        document.querySelector('.bg3').setAttribute('src', 'img/carousel03-G.jpg');
-        document.querySelector('.bg4').setAttribute('src', 'img/carousel04-G.jpg');
-    }else{
-        return false
+        background.style = 'display: none;'
+        document.querySelector('#bg1').setAttribute('src', 'img/carousel01-G.jpg');
+        document.querySelector('#bg2').setAttribute('src', 'img/carousel02-G.jpg');
+        document.querySelector('#bg3').setAttribute('src', 'img/carousel03-G.jpg');
+        document.querySelector('#bg4').setAttribute('src', 'img/carousel04-G.jpg');
+    } else {
+        document.querySelector('#bg1').setAttribute('src', 'img/carousel01-P.jpg');
+        document.querySelector('#bg2').setAttribute('src', 'img/carousel02-P.jpg');
+        document.querySelector('#bg3').setAttribute('src', 'img/carousel03-P.jpg');
+        document.querySelector('#bg4').setAttribute('src', 'img/carousel04-P.jpg');
     }
 }
 

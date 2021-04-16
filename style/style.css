@@ -15,6 +15,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body{
+  background: var(--bg);
+}
+
 a {
   text-decoration: none;
   color: var(--rosaClaro);
@@ -295,9 +299,32 @@ footer {
 /* Width 1000px pra cima */
 
 @media (min-width: 62.5rem) {
+
+  header{
+    padding: 2rem;
+  }
+
   .carrossel > img {
     width: 100%;
     height: 100%;
   }
-  
+
+  .banner1 {
+    margin: 61rem 0 3rem 0;
+  }
+
+  .containerDonos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    color: var(--roxo);
+  }
+
+
+
+
+
+
 }
