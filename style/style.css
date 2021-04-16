@@ -15,7 +15,22 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body{
+.carregando {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 5rem;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+}
+.carregando > p:first-child {
+  font-size: 10rem;
+}
+
+body {
   /* display: none; */
   background: var(--bg);
 }
@@ -53,7 +68,8 @@ header > p {
 }
 
 h1,
-header > p {
+header > p,
+.carregando > p {
   background-image: radial-gradient(
     circle at top left,
     var(--azulEscuro) 1%,
@@ -300,8 +316,7 @@ footer {
 /* Width 1000px pra cima */
 
 @media (min-width: 62.5rem) {
-
-  header{
+  header {
     padding: 2rem;
   }
 
@@ -322,10 +337,4 @@ footer {
     width: 20rem;
     color: var(--roxo);
   }
-
-
-
-
-
-
 }
