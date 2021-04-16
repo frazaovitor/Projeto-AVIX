@@ -1,3 +1,18 @@
+if (document.readyState === "loading") {
+    // document.querySelector('body').style = "display: none"
+    document.addEventListener('DOMContentLoaded', function () {
+        slide()
+        mudarImagem()
+    })
+
+} else {  
+    document.querySelector('body').style = "display: none"
+}
+
+
+
+
+
 tamanhoTela = window.innerWidth
 
 background = document.querySelectorAll('.bg')
@@ -17,10 +32,6 @@ function slide() {
     }, tempoSlide)
 }
 
-document.addEventListener('DOMContentLoaded', function(){
-    slide()
-})
-
 function mudarImagem() {
     if (tamanhoTela >= 700) {
         background.style = 'display: none;'
@@ -36,7 +47,8 @@ function mudarImagem() {
     }
 }
 
-mudarImagem()
+
+
 
 
 
