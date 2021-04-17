@@ -32,7 +32,7 @@
 .carregando > p:last-child {
   font-size: 1rem;
 }
-.carregando > i{
+.carregando > i {
   color: rgb(49, 49, 49);
 }
 
@@ -109,11 +109,11 @@ header > p,
   }
 }
 
-.carrossel {
+.carousel {
   display: flex;
 }
 
-.carrossel > img {
+.carousel > img {
   width: 100%;
   height: 370px;
   object-fit: cover;
@@ -326,9 +326,9 @@ footer {
     padding: 2rem;
   }
 
-  .carrossel > img {
-    width: 100%;
-    height: 100%;
+  .carousel > img {
+    max-width: 100%;
+    min-height: 100%;
   }
 
   .banner1 {
