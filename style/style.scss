@@ -1,0 +1,519 @@
+// RESET
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    width: 100%;
+}
+
+// reset tamanho da fonte
+@media(max-width:1080px) {
+
+    html,
+    body {
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width:720px) {
+
+    html,
+    body {
+        font-size: 87.5%;
+    }
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+
+}
+
+body {
+    line-height: 1;
+    background-color: var(--backGround1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// LOADING PAGE
+
+:root {
+    --backGround1: #FFEEEE;
+    --backGround2: #B39494;
+    --destaque: #E91D74;
+    --fontePadrao: #805050;
+
+    //cores do título
+    --rosa-1: #C132ED;
+    --roxo: #8830E3;
+    --vermelho: #ED3283;
+    --rosa-2: #D638CB;
+}
+
+.destaque {
+    color: var(--destaque);
+    font-weight: 800;
+}
+
+.carregando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+
+    p:first-child {
+        font-size: 6rem;
+    }
+
+    p:last-child {
+        font-size: 1rem;
+    }
+
+    i {
+        color: rgb(49, 49, 49);
+    }
+}
+
+header {
+    width: 100%;
+}
+
+header,
+.carregando {
+    font-family: Acme, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-weight: 800;
+        font-size: 5rem;
+    }
+
+    p {
+        margin: 0.5rem 0 10px 0;
+        font-size: 1.25rem;
+    }
+
+    background-image: radial-gradient(circle at top left,
+        var(--destaque) 1%,
+        var(--rosa-1) 25%,
+        var(--roxo) 60%,
+        var(--vermelho) 85%,
+        var(--rosa-2) 100%);
+
+    background-size: 300%;
+    background-position: right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: background;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background {
+    0% {
+        background-position: right;
+    }
+
+    25% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.carousel {
+    img {
+        max-width: 100%;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(6deg, #FFEEEE 49.6%, #B39494 50%);
+
+    img {
+        width: 15rem;
+    }
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    h2 {
+        font-weight: 800;
+        font-size: 1.8rem;
+        color: var(--destaque);
+    }
+
+    .traco {
+        width: 7rem;
+        border: 1px solid var(--destaque);
+        border-radius: 10px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        max-width: 75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        padding-bottom: 10rem;
+
+
+        .imagens {
+            width: 35rem;
+            height: 35rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagemEmpresa {
+            background: linear-gradient(90deg, var(--backGround1)30%, var(--backGround2)0);
+        }
+
+        .imagemSocio1 {
+            background-image: linear-gradient(var(--backGround1)20%, var(--backGround2)0);
+        }
+
+        .imagemSocio2 {
+            img {
+                box-shadow: 40px 29px 0px 12px #b39494;
+            }
+        }
+
+        .descricao {
+            width: 35rem;
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                color: var(--fontePadrao);
+            }
+        }
+
+        .redesSociais {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+
+            img {
+                width: 10rem;
+            }
+
+            a {
+                background-image: linear-gradient(45deg, var(--backGround1)50%, var(--backGround2)50%);
+                padding: .6rem .5rem 0 .5rem;
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-position: right;
+                transition: .5s;
+
+                &:hover {
+                    background-size: 250%;
+                }
+
+            }
+        }
+    }
+
+    .produtos {
+        max-width: 70rem;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+
+        .camisas {
+            background-image: linear-gradient(70deg, var(--backGround1)50%, var(--backGround2)50.1%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 2rem;
+
+            img {
+                transition: all .5s;
+
+                &:hover {
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .tecido {
+        max-width: 70rem;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+
+        .bannerTecido {
+            width: 100%;
+            height: 10rem;
+            display: flex;
+
+            p {
+                width: 80%;
+                margin: 0 auto;
+                align-self: center;
+                font-size: 1.5rem;
+            }
+        }
+
+        .BT1 {
+            background-color: var(--backGround2);
+            color: var(--backGround1);
+        }
+
+        .BT2 {
+            justify-content: flex-end;
+            color: var(--fontePadrao);
+        }
+    }
+
+    .vendas {
+        max-width: 70rem;
+        font-size: 2rem;
+        color: var(--fontePadrao);
+        margin-bottom: 10rem;
+
+
+        img {
+            width: 10rem;
+            margin-bottom: -1rem;
+        }
+
+        .btnVendas {
+            transition: .3s;
+        }
+
+        .btnVendas:hover {
+            background: var(--backGround2);
+            border-radius: 10px;
+        }
+    }
+
+    .contato {
+        max-width: 25rem;
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+
+        form {
+            max-width: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            label,
+            button {
+                margin: 1rem 0 .5rem 0;
+                font-size: 1.5rem;
+                color: var(--fontePadrao);
+            }
+
+            input,
+            textarea {
+                width: 25rem;
+                border: none;
+                font-size: 1.5rem;
+                background-color: var(--backGround2);
+                color: var(--backGround1);
+            }
+
+            input:focus,
+            textarea:focus {
+                outline-color: var(--destaque);
+            }
+
+            input {
+                height: 1.9rem;
+                border-radius: 10px;
+            }
+
+            textarea {
+                height: 10rem;
+                resize: none;
+            }
+
+            button {
+                width: 12rem;
+                height: 3rem;
+                background-color: var(--backGround2);
+                border: none;
+                border-radius: 10rem;
+                cursor: pointer;
+                margin-bottom: 10rem;
+
+                &:hover {
+                    background-color: (var(--fontePadrao));
+                    color: var(--backGround2);
+                }
+            }
+        }
+    }
+
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    background-color: var(--fontePadrao);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--backGround1);
+}
