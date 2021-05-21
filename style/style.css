@@ -274,7 +274,7 @@ header p,
 }
 
 .carousel img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .banner {
@@ -425,7 +425,7 @@ main .container .redesSociais a:hover {
 }
 
 main .produtos {
-  max-width: 70rem;
+  max-width: 75rem;
   margin: 0 auto;
   margin-bottom: 10rem;
 }
@@ -604,5 +604,156 @@ footer {
   font-size: 2rem;
   font-weight: 800;
   color: var(--backGround1);
+}
+
+@media (max-width: 425px) {
+  .corpo {
+    max-width: 30.357rem;
+    margin: 0 auto;
+    line-height: 2rem;
+  }
+  .corpo header {
+    padding-top: 2rem;
+  }
+  .corpo .banner {
+    height: 11rem;
+  }
+  .corpo .banner img {
+    width: 8rem;
+  }
+  .corpo .titulo h2 {
+    font-size: 1.3rem;
+  }
+  .corpo .titulo .traco {
+    width: 3rem;
+  }
+  .corpo main {
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+  .corpo main .container .imagens {
+    width: 20rem;
+    height: 20rem;
+  }
+  .corpo main .container .imagemSocio2 img {
+    -webkit-box-shadow: 7px 14px 0px 0px #b39494;
+            box-shadow: 7px 14px 0px 0px #b39494;
+  }
+  .corpo main .container .descricao {
+    width: 19rem;
+  }
+  .corpo main .container .descricao p {
+    font-size: 1.3rem;
+  }
+  .corpo main .container .redesSociais img {
+    width: 7rem;
+  }
+  .corpo main .produtos .camisas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+    background-image: linear-gradient(86.7deg, var(--backGround1) 50%, var(--backGround2) 50.1%);
+  }
+  .corpo main .produtos .camisas img {
+    -webkit-transition: none;
+    transition: none;
+    border-radius: 10px;
+  }
+  .corpo main .produtos .camisas img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .corpo main .tecido {
+    max-width: 20rem;
+    margin-bottom: 10rem;
+  }
+  .corpo main .tecido .bannerTecido {
+    width: 15rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0;
+  }
+  .corpo main .tecido .bannerTecido img {
+    width: 10rem;
+    border-radius: 10px;
+  }
+  .corpo main .tecido .bannerTecido p {
+    width: 13rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .corpo main .vendas {
+    max-width: 20rem;
+    font-size: 1.5rem;
+    color: var(--fontePadrao);
+    margin-bottom: 10rem;
+  }
+  .corpo main .vendas img {
+    width: 8rem;
+  }
+  .corpo main .contato {
+    max-width: 20rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .corpo main .contato .titulo {
+    width: 16rem;
+    margin: 0 auto;
+  }
+  .corpo main .contato form {
+    max-width: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .corpo main .contato form label,
+  .corpo main .contato form button {
+    margin: 1rem 0 .5rem 0;
+    font-size: 1.5rem;
+    color: var(--fontePadrao);
+  }
+  .corpo main .contato form input,
+  .corpo main .contato form textarea {
+    width: 20rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: var(--backGround2);
+    color: var(--backGround1);
+  }
+  .corpo main .contato form textarea {
+    height: 10rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

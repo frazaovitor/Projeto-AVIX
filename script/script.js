@@ -18,6 +18,17 @@ document.onreadystatechange = function () {
         document.querySelector('.carregando').style.display = 'none'
         document.querySelector('.corpo').style.display = 'block'
     } else {
+        // carregando conteúdo
         document.querySelector('.corpo').style.display = 'none'
+
+        carousel = document.querySelectorAll('#carousel')
+
+        if (window.screen.width <= 425) {
+            for (i = 0; i < carousel.length; i++) {
+                carousel[i].src = `img/carousel${i + 1}-P.webp`
+            }
+        } else {
+            false
+        }
     }
 }

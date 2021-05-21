@@ -256,7 +256,7 @@ header,
 
 .carousel {
     img {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -367,7 +367,7 @@ main {
     }
 
     .produtos {
-        max-width: 70rem;
+        max-width: 75rem;
         margin: 0 auto;
         margin-bottom: 10rem;
 
@@ -505,7 +505,6 @@ main {
 
 }
 
-
 footer {
     display: flex;
     align-items: center;
@@ -516,4 +515,170 @@ footer {
     font-size: 2rem;
     font-weight: 800;
     color: var(--backGround1);
+}
+
+@media (max-width: 425px) {
+
+    .corpo {
+        max-width: 30.357rem;
+        margin: 0 auto;
+        line-height: 2rem;
+
+        header{
+            padding-top: 2rem;
+        }
+
+        .banner {
+            height: 11rem;
+
+            img {
+                width: 8rem;
+            }
+        }
+
+        .titulo {
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .traco {
+                width: 3rem;
+            }
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 20rem;
+
+
+            .container {
+
+                .imagens {
+                    width: 20rem;
+                    height: 20rem;
+
+
+                }
+
+                .imagemSocio2 {
+
+                    img {
+                        box-shadow: 7px 14px 0px 0px #b39494;
+                    }
+                }
+
+                .descricao {
+                    width: 19rem;
+
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .redesSociais {
+
+                    img {
+                        width: 7rem;
+                    }
+                }
+            }
+
+            .produtos {
+                .camisas {
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: center;
+                    align-items: center;
+                    padding: 1rem 0;
+                    background-image: linear-gradient(86.7deg, var(--backGround1)50%, var(--backGround2)50.1%);
+
+                    img {
+                        transition: none;
+                        border-radius: 10px;
+
+                        &:hover {
+                            transform: none;
+                        }
+                    }
+                }
+            }
+
+            .tecido {
+                max-width: 20rem;
+                margin-bottom: 10rem;
+
+                .bannerTecido {
+                    width: 15rem;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 2rem 0;
+
+                    img {
+                        width: 10rem;
+                        border-radius: 10px;
+                    }
+
+                    p {
+                        width: 13rem;
+                        text-align: center;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+
+            .vendas {
+                max-width: 20rem;
+                font-size: 1.5rem;
+                color: var(--fontePadrao);
+                margin-bottom: 10rem;
+
+
+                img {
+                    width: 8rem;
+                }
+            }
+
+            .contato {
+                max-width: 20rem;
+                flex-wrap: wrap;
+                display: flex;
+                text-align: center;
+
+                .titulo {
+                    width: 16rem;
+                    margin: 0 auto;
+                }
+
+                form {
+                    max-width: 20rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    label,
+                    button {
+                        margin: 1rem 0 .5rem 0;
+                        font-size: 1.5rem;
+                        color: var(--fontePadrao);
+                    }
+
+                    input,
+                    textarea {
+                        width: 20rem;
+                        border: none;
+                        font-size: 1.5rem;
+                        background-color: var(--backGround2);
+                        color: var(--backGround1);
+                    }
+
+                    textarea {
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+    }
 }
