@@ -248,16 +248,17 @@
                     <div class="traco"></div>
                 </div>
 
-                <form action="https://api.staticforms.xyz/submit" method="post">
+                <form
+                id="demo-form" action="https://api.staticforms.xyz/submit" method="post">
                     <input type="hidden" name="accessKey" value="074c4c89-d11d-4f0d-b6e5-5b9cdface983">
                     <input type="hidden" name="redirectTo" value="https://www.avix.tk/">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="name">
+                    <input type="text" id="nome" name="name" required>
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                     <label for="mensagem">Digite sua mensagem</label>
-                    <textarea name="message" id="mensagem"></textarea>
-                    <button type="submit">ENVIAR</button>
+                    <textarea name="message" id="mensagem" required></textarea>
+                    <button type="submit" class="g-recaptcha" data-sitekey="6Ldnm0AbAAAAAIUrxv30TjqZ0j6r_Egz8GqKssqB" data-callback='onSubmit' data-action='submit'>ENVIAR</button>
                 </form>
             </section>
 
@@ -282,6 +283,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
             integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous"></script>
+
+        <!-- recaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
     </div>
 </body>
 
