@@ -1,11 +1,6 @@
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
 
-        // RECAPTCHA
-        function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-        }
-
         // CAROUSEL
         $(document).ready(function () {
             $('.carousel').slick({
