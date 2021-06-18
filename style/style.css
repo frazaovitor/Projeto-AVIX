@@ -121,7 +121,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
   background-color: var(--backGround1);
   font-family: "Open Sans", sans-serif;
 }

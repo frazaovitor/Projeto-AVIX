@@ -17,10 +17,12 @@ document.onreadystatechange = function () {
 
         document.querySelector('.carregando').style.display = 'none'
         document.querySelector('.corpo').style.display = 'block'
+
+        formEnviado()
+
     } else {
         // carregando conteúdo
         document.querySelector('.corpo').style.display = 'none'
-
         carousel = document.querySelectorAll('#carousel')
 
         if (window.screen.width <= 425) {
@@ -31,4 +33,11 @@ document.onreadystatechange = function () {
             false
         }
     }
+}
+
+function formEnviado() {
+    verificado = document.querySelector('#formulario')
+    verificado.addEventListener('submit', () => {
+        alert("Obrigado! Seua dados foram enviados com sucesso!")
+    })
 }
