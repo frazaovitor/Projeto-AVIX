@@ -15,13 +15,13 @@ document.onreadystatechange = function () {
             });
         });
 
-        if (window.screen.width <= 425) {
-            for (i = 0; i < carousel.length; i++) {
-                carousel[i].src = `img/carousel${i + 1}-P.webp`
-            }
-        } else {
-            false
-        }
+        // if (window.screen.width <= 425) {
+        //     for (i = 0; i < carousel.length; i++) {
+        //         carousel[i].src = `img/carousel${i + 1}-P.webp`
+        //     }
+        // } else {
+        //     false
+        // }
 
         document.querySelector('.carregando').style.display = 'none'
         document.querySelector('.corpo').style.display = 'block'
