@@ -121,7 +121,7 @@ section {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1;
   background-color: var(--backGround1);
   font-family: "Open Sans", sans-serif;
 }
@@ -160,6 +160,23 @@ table {
   --rosa-2: #d638cb;
 }
 
+.contatoWhats {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  bottom: 0;
+}
+
+.voltarTopo {
+  position: fixed;
+  z-index: 99;
+  right: 50%;
+  bottom: 2%;
+  background-color: var(--backGround2);
+  border-radius: .75rem;
+  padding: .25rem;
+}
+
 .destaque {
   color: var(--destaque);
   font-weight: 800;
@@ -170,15 +187,15 @@ table {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 3rem;
   width: 100vw;
   height: 100vh;
@@ -210,32 +227,25 @@ header,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: radial-gradient(
-    circle at top left,
-    var(--destaque) 1%,
-    var(--rosa-1) 25%,
-    var(--roxo) 60%,
-    var(--vermelho) 85%,
-    var(--rosa-2) 100%
-  );
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: radial-gradient(circle at top left, var(--destaque) 1%, var(--rosa-1) 25%, var(--roxo) 60%, var(--vermelho) 85%, var(--rosa-2) 100%);
   background-size: 300%;
   background-position: right;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation-name: background;
-  animation-name: background;
+          animation-name: background;
   -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 header h1,
@@ -291,11 +301,11 @@ header p,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: linear-gradient(6deg, #ffeeee 49.6%, #b39494 50%);
 }
 
@@ -308,11 +318,11 @@ header p,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 2rem;
 }
 
@@ -334,14 +344,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .container {
@@ -350,13 +360,13 @@ main .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 5rem;
   padding-bottom: 10rem;
 }
@@ -368,45 +378,26 @@ main .container .imagens {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .container .imagemEmpresa {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(30%, var(--backGround1)),
-    color-stop(0, var(--backGround2))
-  );
-  background: linear-gradient(
-    90deg,
-    var(--backGround1) 30%,
-    var(--backGround2) 0
-  );
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, var(--backGround1)), color-stop(0, var(--backGround2)));
+  background: linear-gradient(90deg, var(--backGround1) 30%, var(--backGround2) 0);
 }
 
 main .container .imagemSocio1 {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(20%, var(--backGround1)),
-    color-stop(0, var(--backGround2))
-  );
-  background-image: linear-gradient(
-    var(--backGround1) 20%,
-    var(--backGround2) 0
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, var(--backGround1)), color-stop(0, var(--backGround2)));
+  background-image: linear-gradient(var(--backGround1) 20%, var(--backGround2) 0);
 }
 
 main .container .imagemSocio2 img {
   -webkit-box-shadow: 40px 29px 0px 12px #b39494;
-  box-shadow: 40px 29px 0px 12px #b39494;
+          box-shadow: 40px 29px 0px 12px #b39494;
 }
 
 main .container .descricao {
@@ -424,11 +415,11 @@ main .container .redesSociais {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 2rem;
 }
 
@@ -437,11 +428,7 @@ main .container .redesSociais img {
 }
 
 main .container .redesSociais a {
-  background-image: linear-gradient(
-    45deg,
-    var(--backGround1) 50%,
-    var(--backGround2) 50%
-  );
+  background-image: linear-gradient(45deg, var(--backGround1) 50%, var(--backGround2) 50%);
   padding: 0.6rem 0.5rem 0 0.5rem;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -461,23 +448,19 @@ main .produtos {
 }
 
 main .produtos .camisas {
-  background-image: linear-gradient(
-    70deg,
-    var(--backGround1) 50%,
-    var(--backGround2) 50.1%
-  );
+  background-image: linear-gradient(70deg, var(--backGround1) 50%, var(--backGround2) 50.1%);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   row-gap: 2rem;
 }
 
@@ -488,7 +471,7 @@ main .produtos .camisas img {
 
 main .produtos .camisas img:hover {
   -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+          transform: scale(1.3);
   border-radius: 10px;
 }
 
@@ -510,8 +493,8 @@ main .tecido .bannerTecido p {
   width: 80%;
   margin: 0 auto;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 1.5rem;
 }
 
@@ -522,8 +505,8 @@ main .tecido .BT1 {
 
 main .tecido .BT2 {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: var(--fontePadrao);
 }
 
@@ -532,6 +515,7 @@ main .vendas {
   font-size: 2rem;
   color: var(--fontePadrao);
   margin-bottom: 10rem;
+  line-height: 2;
 }
 
 main .vendas img {
@@ -546,13 +530,14 @@ main .vendas .btnVendas {
 
 main .vendas .btnVendas:hover {
   background: var(--backGround2);
+  padding: 0.5rem 0;
   border-radius: 10px;
 }
 
 main .contato {
   max-width: 25rem;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,14 +551,14 @@ main .contato form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .contato form label,
@@ -627,11 +612,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 10rem;
   background-color: var(--fontePadrao);
@@ -671,7 +656,7 @@ footer {
   }
   .corpo main .container .imagemSocio2 img {
     -webkit-box-shadow: 7px 14px 0px 0px #b39494;
-    box-shadow: 7px 14px 0px 0px #b39494;
+            box-shadow: 7px 14px 0px 0px #b39494;
   }
   .corpo main .container .descricao {
     width: 19rem;
@@ -688,18 +673,14 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     justify-self: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 1rem 0;
-    background-image: linear-gradient(
-      86.7deg,
-      var(--backGround1) 50%,
-      var(--backGround2) 50.1%
-    );
+    background-image: linear-gradient(86.7deg, var(--backGround1) 50%, var(--backGround2) 50.1%);
   }
   .corpo main .produtos .camisas img {
     -webkit-transition: none;
@@ -708,7 +689,7 @@ footer {
   }
   .corpo main .produtos .camisas img:hover {
     -webkit-transform: none;
-    transform: none;
+            transform: none;
   }
   .corpo main .tecido {
     max-width: 20rem;
@@ -722,11 +703,11 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 2rem 0;
   }
   .corpo main .tecido .bannerTecido img {
@@ -750,7 +731,7 @@ footer {
   .corpo main .contato {
     max-width: 20rem;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -767,14 +748,14 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .corpo main .contato form label,
   .corpo main .contato form button {
