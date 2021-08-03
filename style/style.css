@@ -121,7 +121,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.2;
   background-color: var(--backGround1);
   font-family: "Open Sans", sans-serif;
 }
@@ -167,14 +167,18 @@ table {
   bottom: 0;
 }
 
+.contatoWhats .imgTamanho {
+  width: 80%;
+}
+
 .voltarTopo {
   position: fixed;
   z-index: 99;
   right: 50%;
   bottom: 2%;
   background-color: var(--backGround2);
-  border-radius: .75rem;
-  padding: .25rem;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
 }
 
 .destaque {
@@ -626,6 +630,23 @@ footer {
 }
 
 @media (max-width: 425px) {
+  .contatoWhats .imgTamanho {
+    width: 50%;
+  }
+  .voltarTopo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .voltarTopo .imgTamanho {
+    width: 50%;
+  }
   .corpo {
     max-width: 30.357rem;
     margin: 0 auto;
